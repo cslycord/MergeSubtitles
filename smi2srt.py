@@ -4,19 +4,19 @@
 from __future__ import print_function
 from builtins import str
 
-__author__ = "steven <mcchae@gmail.com>"
-__date__ = "2014/02/15"
-__version_info__ = (1, 3, 1)
-__version__ = "{0}.{1}.{2}".format(__version_info__[0], __version_info__[1],
-                                   __version_info__[2])
-__license__ = "GCQVista's NDA"
-
 import os
 import sys
 import re
 import logging
 import io
 from my_subtitle import MySubtitle
+
+__author__ = "steven <mcchae@gmail.com>"
+__date__ = "2014/02/15"
+__version_info__ = (1, 3, 1)
+__version__ = "{0}.{1}.{2}".format(__version_info__[0], __version_info__[1],
+                                   __version_info__[2])
+__license__ = "GCQVista's NDA"
 
 '''
 
@@ -133,7 +133,9 @@ class smiItem(object):
                             self.MySub.sub.end_times,
                             self.MySub.sub.subtitles)
         return s
+
 # -----------------------------------------------------------------------------
+
 
 class SMI2SRT(smiItem):
     '''
