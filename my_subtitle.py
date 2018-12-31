@@ -41,7 +41,7 @@ class MySubtitle():
         return self.sub.start_times == other.sub.start_times
 
     def __ne__(self, other):
-        return self.sub.start_times != other.sub.start_time
+        return self.sub.start_times != other.sub.start_times
 
     def start(self):
         return self.sub.start_times
